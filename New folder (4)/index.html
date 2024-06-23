@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Finance Dashboard</h1>
+        </header>
+        <div class="content">
+            <div class="form-container">
+                <h2>Add Transaction</h2>
+                <input type="text" id="transaction-name" placeholder="Transaction Name">
+                <input type="number" id="transaction-amount" placeholder="Amount">
+                <select id="transaction-type">
+                    <option value="expense">Expense</option>
+                    <option value="income">Income</option>
+                </select>
+                <button id="add-transaction-btn">Add Transaction</button>
+            </div>
+            <div class="transaction-list">
+                <h2>Transactions</h2>
+                <ul id="transactions"></ul>
+            </div>
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>Total Income: $<span id="total-income">0</span></p>
+                <p>Total Expenses: $<span id="total-expenses">0</span></p>
+                <p>Balance: $<span id="balance">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
